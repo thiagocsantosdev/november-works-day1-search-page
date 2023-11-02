@@ -1,0 +1,147 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+  }
+
+  *:focus {
+    outline: none;
+}
+  
+  html{
+    background-color:#1f1f1f;
+    color:whitesmoke;
+    font-family:helvetica;
+  }
+  
+  header{
+    margin:40px;
+    font-weight:900;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo{
+    font-size: 2rem;
+  }
+
+  .date{
+    font-weight: 100;
+    font-size: 1.2rem;
+    padding: 40px;
+
+  }
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  main{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    width: 80vw;
+  }
+
+  .inputs{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top: 50px;
+  }
+
+ 
+  
+  main input{
+    height:40px;
+    width: 400px;
+    border-radius:5px 0px 0px 5px;
+    border:none;
+    background-color: #2e2d2d;
+    color: lightgrey;
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .search-btn{
+    background-color:gray;
+    padding:8px;
+    cursor:pointer;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    transition: 400ms;
+  }
+
+  .search-btn:hover{
+  background-color: #4e59f0;
+  transition: 400ms;
+  }
+  
+  .delete-text{
+    transition: 400ms;
+    background-color: #2e2d2d;
+    padding: 8px;
+    display: none;
+    
+  }
+
+  .delete-text:focus{
+    outline: none;
+  }
+  
+  .delete-text:hover{
+    transition: 400ms;
+    opacity: 1;
+    cursor: pointer;
+    background-color: #383737;
+  }
+
+main img{
+    border-radius: 5px;
+}
+
+.social-mobile i{
+    color: gray;
+}
+
+.social-mobile{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.fa-spotify:hover{
+    color:  green ;
+    transition: 400ms;
+}
+
+.fa-instagram:hover{
+    color: rgb(231, 41, 105);
+    transition: 400ms;
+}
+
+.fa-youtube:hover{
+    color:red;
+    transition: 400ms;
+}
+
+.fa-facebook:hover{
+    color:blue;
+    transition:400ms;
+}
+
+
+@media screen and (max-width: 480px) {
+    
+    main img{
+        width: 90vw;
+    }
+
+    main input{
+        width: 260px;
+    }
+}
